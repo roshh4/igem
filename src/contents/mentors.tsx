@@ -60,7 +60,7 @@ export function Mentors() {
         <TeamCard 
           teamMemberName='RHEA HARRY WILLIAMS '
           teamMemberImage={rhea_mam}
-          teamMemberRole='About her'
+          teamMemberRole='About her vanacum'
           teamMemberAbout="Renowned in her social circles for being grounded and strategic, Rhea lives by the philosophy of playing to win big.
           She has won numerous accolades in speaking events, believing that strong communication skills are crucial in today's diverse world.Committed to giving back to the world, Rhea views her involvement with the iGEM project as a significant step toward her aspirations."
         />
