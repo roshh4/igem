@@ -1,0 +1,82 @@
+.sustainable-page-container {
+    width: 85%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.sustainable-goal-container {
+    position: relative;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+    background-color: #ffffff;
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Adjusted the transition duration */
+    cursor: pointer;
+}
+
+.sustainable-goal-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.sus-content {
+    font-size: 1.1rem;
+    color: #333333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.hover-content {
+    overflow: hidden;
+    max-height: 0;
+    transform: translateY(1em);
+    transition: max-height 1.4s ease, transform 1.4s ease; /* Adjusted the transition duration */
+    color: #6E6E70;
+}
+
+.sustainable-goal-container:hover .hover-content {
+    max-height: 1000px; /* Increased the max-height to ensure all content is visible */
+    transform: none;
+    overflow: visible; /* Ensure that the overflow content is shown */
+}
+
+.sus-ref-container {
+    margin-top: 20px;
+}
+
+.ref-container {
+    display: block;
+    text-decoration: none;
+    background-color: #0066cc;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ref-container:hover {
+    background-color: #004099;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.ref-container svg {
+    margin-right: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

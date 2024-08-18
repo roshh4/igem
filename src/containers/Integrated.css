@@ -1,0 +1,36 @@
+.integrated-container {
+  display: flex;
+}
+
+.sidebar {
+  position: fixed;
+  width: 200px;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  cursor: pointer;
+  color: gray;
+}
+
+.sidebar li.active {
+  font-weight: bold;
+  color: black;
+}
+
+.content {
+  margin-left: 220px;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 100px;
+  padding: 20px;
+  border: 1px solid #ddd;
+}

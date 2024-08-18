@@ -1,0 +1,12 @@
+.safety-page-container {
+    width: 75%;
+    margin-left: 340px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
+    padding: 5px;
+}
+
+.safety-container {
+    padding: 5px;
+    border-radius: 10px;
+    margin: 20px auto;
+}

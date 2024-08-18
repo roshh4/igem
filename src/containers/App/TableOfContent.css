@@ -1,0 +1,94 @@
+:root {
+    --header-height: 10px; /* Example height */
+    --footer-height: 60px; /* Example height */
+    --color-toc-bg: #2C3E50; /* Background color for ToC */
+    --color-toc-accent: #3498DB; /* Accent color for active and hover states */
+    --color-toc-text: #ECF0F1; /* Text color */
+    --color-toc-border: #2980B9; /* Border color */
+}
+
+.toc-container {
+    position:fixed;
+    left: 20px;
+    top: calc(var(--header-height) + 20px); /* Adjusted to start after the header */
+    bottom: calc(var(--footer-height) + 20px); /* Adjusted to end before the footer */
+    width: 280px;
+    height: 610px;
+    background-color: var(--color-toc-bg);
+    color: var(--color-toc-text);
+    border-left: 3px solid var(--color-toc-border);
+    padding: 20px;
+    
+    z-index: 1;
+    overflow-y: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-sizing: border-box;
+   margin-top: 60px;
+
+}
+
+
+
+.toc-head {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-align: center;
+    border-bottom: 2px solid var(--color-toc-border);
+    padding-bottom: 10px;
+    color: var(--color-toc-accent);
+}
+
+.toc-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.toc-item {
+    display: block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 12px 15px;
+    transition: 0.3s ease;
+    position: relative;
+    color: var(--color-toc-text);
+    text-align: left;
+    border-radius: 8px;
+    margin: 5px 0;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.toc-item:hover, .toc-item.active {
+    background-color: var(--color-toc-accent);
+    color: var(--color-toc-bg);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding-left: 20px;
+}
+
+.toc-item::before {
+    content: '→';
+    display: inline-block;
+    margin-right: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease, margin-right 0.3s ease;
+}
+
+.toc-item.active::before, .toc-item:hover::before {
+    opacity: 1;
+    margin-right: 15px;
+}
+
+.toc-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.toc-container::-webkit-scrollbar-thumb {
+    background-color: var(--color-toc-accent);
+    border-radius: 5px;
+}
+
+.toc-container::-webkit-scrollbar-track {
+    background-color: var(--color-toc-bg);
+}

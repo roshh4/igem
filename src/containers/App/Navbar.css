@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Rubik Bubbles';
+    src: url('../../images/RubikBubbles-Regular.ttf');
+}
+
+.navbar-top {
+    padding: 5px;
+    /* font-family: 'Rubik Bubbles'; */
+    top: 0;
+    position: fixed;
+    background-color: var(--color-white) !important;
+    width: 100%;
+    z-index: 200;
+   
+}
