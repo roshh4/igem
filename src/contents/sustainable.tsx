@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import head_img from '../images/sust.png';
+// import head_img from '../images/sust.png';
 export function Sustainable() {
   const sustainableRef = useRef<HTMLDivElement | null>(null);
 
@@ -8,7 +8,7 @@ export function Sustainable() {
  <header
       className="bg-hero py-5 mb-5 header"
       style={{
-        backgroundImage: `url(${head_img})`,
+        backgroundImage: `url()`,
         backgroundSize: "cover",
         backgroundPosition: "right-center",
         backgroundRepeat: "no-repeat",

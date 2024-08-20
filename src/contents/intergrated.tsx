@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import TableOfContent from "../components/TableOfContent";
-import integ from '../images/ihp.jpg';
+// import integ from '../images/ihp.jpg';
 
 export function Integrated() {
   const humanPracticesRef = useRef<HTMLDivElement | null>(null);
@@ -10,7 +10,7 @@ export function Integrated() {
       <header
         className="bg-hero py-5 mb-5 header"
         style={{
-          backgroundImage: `url(${integ})`,
+          backgroundImage: `url()`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

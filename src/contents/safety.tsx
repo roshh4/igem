@@ -1,7 +1,5 @@
 import { useRef } from "react";
 import TableOfContent from "../components/TableOfContent";
-import safeties from '../images/safety.png';
-
 export function Safety() {
   const safetyRef = useRef<HTMLDivElement | null>(null);
 
@@ -10,7 +8,7 @@ export function Safety() {
       <header
         className="bg-hero py-5 mb-5 header"
         style={{
-          backgroundImage: `url(${safeties})`,
+          backgroundImage: `url('images/safety.png')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

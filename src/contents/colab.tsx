@@ -1,7 +1,7 @@
 import { useRef } from "react";
 // import { Inspirations, InspirationLink } from "../components";
 import TableOfContent from "../components/TableOfContent";
-import colabs from '../images/colab.jpg';
+// import colabs from '../images/colab.jpg';
 export function Collab() {
   const CollabRef = useRef<HTMLDivElement | null>(null);
   // const links: InspirationLink[] = [
@@ -19,7 +19,7 @@ export function Collab() {
     <header
       className="bg-hero py-5 mb-5 header"
       style={{
-        backgroundImage: `url(${colabs})`,
+        backgroundImage: `url()`,
         backgroundSize: "cover",
         backgroundPosition: "",
         backgroundRepeat: "no-repeat",
