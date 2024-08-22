@@ -19,7 +19,7 @@ export function Collab() {
     <header
       className="bg-hero py-5 mb-5 header"
       style={{
-        backgroundImage: `url()`,
+        backgroundImage: `url('images/colab.jpg')`,
         backgroundSize: "cover",
         backgroundPosition: "",
         backgroundRepeat: "no-repeat",

@@ -10,7 +10,7 @@ export function Integrated() {
       <header
         className="bg-hero py-5 mb-5 header"
         style={{
-          backgroundImage: `url()`,
+          backgroundImage: `url('images/ihp.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

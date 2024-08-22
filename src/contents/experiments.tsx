@@ -8,6 +8,7 @@ export function Experiments() {
     { year: 2020, teamName: "Amsterdam", pageName: "Experiments" },
     { year: 2020, teamName: "NCTU_Formosa", pageName: "Experiments" },
     { year: 2020, teamName: "USAFA", pageName: "Experiments" },
+
   ];
 
   return (

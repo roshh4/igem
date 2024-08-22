@@ -1,7 +1,6 @@
 import { useRef } from "react";
 // import { Inspirations, InspirationLink } from "../components";
 import TableOfContent from "../components/TableOfContent";
-// import human_prac from '../images/human_practices.png';
 export function HumanPractices() {
   const humanPracticesRef = useRef<HTMLDivElement | null>(null);
   // const links: InspirationLink[] = [
@@ -19,7 +18,7 @@ export function HumanPractices() {
     <header
       className="bg-hero py-5 mb-5 header"
       style={{
-        backgroundImage: `url()`,
+        backgroundImage: `url('images/human_practices.png')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

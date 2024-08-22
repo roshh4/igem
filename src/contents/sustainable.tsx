@@ -8,7 +8,7 @@ export function Sustainable() {
  <header
       className="bg-hero py-5 mb-5 header"
       style={{
-        backgroundImage: `url()`,
+        backgroundImage: `url('images/sust.png')`,
         backgroundSize: "cover",
         backgroundPosition: "right-center",
         backgroundRepeat: "no-repeat",
